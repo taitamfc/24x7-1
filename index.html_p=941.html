@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+
+<head>
+  <meta charset="UTF-8" />
+  <!--        <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">-->
+  <meta content="width=device-width" name="viewport">
+  <meta name="DC.title" content="Web Development" />
+  <meta name="geo.region" content="SG" />
+  <meta name="google-site-verification" content="gUi-oxoUZ2akjl_IGG87aaAMVJHhs7JyThh7xF-yavM" />
+  <link rel="profile" href="http://gmpg.org/xfn/11" />
+  <link rel="pingback" href="https://24x7studios.com/xmlrpc.php" />
+  <link rel="alternate" href="index.html" hreflang="en-sg" />
+  <title>pingnshop &#8211; Full Cycle software development in Singapore</title>
+  <link rel="alternate" type="application/rss+xml" title="Full Cycle software development in Singapore &raquo; Feed" href="feed/index.html" />
+  <link rel="alternate" type="application/rss+xml" title="Full Cycle software development in Singapore &raquo; Comments Feed" href="comments/feed/index.html" />
+  <script type="text/javascript">
+  window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/72x72\/", "ext": ".png", "source": { "concatemoji": "js\/wp-emoji-release.min.js" } };
+  ! function(a, b, c) {
+    function d(a) { var c, d, e, f = b.createElement("canvas"),
+        g = f.getContext && f.getContext("2d"),
+        h = String.fromCharCode; if (!g || !g.fillText) return !1; switch (g.textBaseline = "top", g.font = "600 32px Arial", a) {
+        case "flag":
+          return g.fillText(h(55356, 56806, 55356, 56826), 0, 0), f.toDataURL().length > 3e3;
+        case "diversity":
+          return g.fillText(h(55356, 57221), 0, 0), c = g.getImageData(16, 16, 1, 1).data, d = c[0] + "," + c[1] + "," + c[2] + "," + c[3], g.fillText(h(55356, 57221, 55356, 57343), 0, 0), c = g.getImageData(16, 16, 1, 1).data, e = c[0] + "," + c[1] + "," + c[2] + "," + c[3], d !== e;
+        case "simple":
+          return g.fillText(h(55357, 56835), 0, 0), 0 !== g.getImageData(16, 16, 1, 1).data[0];
+        case "unicode8":
+          return g.fillText(h(55356, 57135), 0, 0), 0 !== g.getImageData(16, 16, 1, 1).data[0] } return !1 }
+
+    function e(a) { var c = b.createElement("script");
+      c.src = a, c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c) } var f, g, h, i; for (i = Array("simple", "flag", "unicode8", "diversity"), c.supports = { everything: !0, everythingExceptFlag: !0 }, h = 0; h < i.length; h++) c.supports[i[h]] = d(i[h]), c.supports.everything = c.supports.everything && c.supports[i[h]], "flag" !== i[h] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[i[h]]);
+    c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function() { c.DOMReady = !0 }, c.supports.everything || (g = function() { c.readyCallback() }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function() { "complete" === b.readyState && c.readyCallback() })), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji))) }(window, document, window._wpemojiSettings);
+  </script>
+  <style type="text/css">
+  img.wp-smiley,
+  img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+  }
+  </style>
+  <link rel='stylesheet' id='contact-form-7-css' href='css/styles-contactform7.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='rs-plugin-settings-css' href='css/settings.css' type='text/css' media='all' />
+  <style id='rs-plugin-settings-inline-css' type='text/css'>
+  #rs-demo-id {}
+  </style>
+  <link rel='stylesheet' id='theme-components-css' href='css/components.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='theme-css' href='css/style.css' type='text/css' media='all' />
+  <style id='theme-inline-css' type='text/css'>
+  #site-header #site-navigator .menu>li a {
+    color: #333333;
+    font-size: 15px;
+    font-family: Roboto Condensed;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  #masthead .brand {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  body.layout-boxed {
+    background-color: #fff;
+  }
+
+  #site-content #page-header {
+    background-color: #ccc;
+    background-image: url(https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/page_title-mina.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #site-content #page-header .title,
+  #site-content #page-header .subtitle {
+    color: #fff;
+  }
+
+  #site-footer {
+    background-color: #191e28;
+    color: #ccc;
+  }
+
+  .wrapper,
+  .page-fullwidth #page-body .wrapper .content-wrap .content .vc_row_wrap,
+  .page-fullwidth #page-body #respond,
+  .page-fullwidth #page-body .nocomments {
+    width: 1110px;
+  }
+
+  body.layout-boxed #site-wrapper,
+  body.layout-boxed #site-wrapper #masthead-sticky,
+  body.layout-boxed #site-wrapper #masthead.header-v7 {
+    width: 1210px;
+  }
+
+  .side-menu.layout-boxed #site-wrapper {
+    width: 1360px;
+  }
+
+  a,
+  .scheme,
+  .info-icon i,
+  .menu>li.home>a::before,
+  #site-header #masthead #site-navigator .menu.menu-extra>li>a,
+  .projects.projects-grid .projects-items .hentry .project-wrap .project-info .project-title a:hover,
+  .projects.projects-grid-alt .projects-items .hentry .project-wrap .project-info .project-title a:hover,
+  .projects.projects-masonry .projects-items .hentry .project-wrap .project-info .project-title a:hover,
+  .blog .hentry .entry-header .entry-title a:hover,
+  .single .hentry .entry-header .entry-title a:hover,
+  .blog .hentry .entry-content .entry-meta a:hover,
+  .single .hentry .entry-content .entry-meta a:hover,
+  .blog .hentry .entry-content .readmore a:hover,
+  #site-header #masthead #site-navigator .menu li:hover a,
+  #site-header #masthead #site-navigator .menu li.current-menu-item a,
+  #site-wrapper .blog-shortcode.blog-grid .hentry .entry-header .entry-title a:hover,
+  #site-wrapper .imagebox .box-image:hover .box-header .box-title a,
+  #site-wrapper .iconbox .box-header .box-icon i,
+  #site-wrapper .counter .counter-image i,
+  #site-wrapper .posts-carousel .hentry .entry-header .entry-title a:hover,
+  #site-wrapper .vc_toggle .vc_toggle_title h4::after,
+  #site-wrapper .member .member-info .social-links,
+  #site-wrapper .iconlist li i,
+  #site-wrapper .pricing-table .price-column .column-container .price .price,
+  #site-content #page-breadcrumbs .breadcrumbs a:hover {
+    color: #38BBC7;
+  }
+
+  textarea:focus,
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="datetime"]:focus,
+  input[type="datetime-local"]:focus,
+  input[type="date"]:focus,
+  input[type="month"]:focus,
+  input[type="time"]:focus,
+  input[type="week"]:focus,
+  input[type="number"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="search"]:focus,
+  input[type="tel"]:focus,
+  input[type="color"]:focus,
+  input.input-text:focus,
+  select:focus {
+    border-color: #38BBC7;
+  }
+
+  input[type="submit"],
+  button[type="submit"],
+  .button,
+  .goto-top a,
+  .widget .widget-title::after,
+  #site-header #masthead #site-navigator .social-links a:hover,
+  .projects.projects-grid .projects-items .hentry .project-wrap .project-thumbnail .project-buttons a:hover,
+  .projects.projects-grid-alt .projects-items .hentry .project-wrap .project-thumbnail .project-buttons a:hover,
+  .projects.projects-masonry .projects-items .hentry .project-wrap .project-thumbnail .project-buttons a:hover,
+  #site-footer .social-links a:hover,
+  .projects-related .projects-related-title::after,
+  h1.divider::after,
+  h2.divider::after,
+  h3.divider::after,
+  h4.divider::after,
+  h5.divider::after,
+  h6.divider::after,
+  #site-wrapper .vc_progress_bar .vc_label .vc_label_units,
+  .woocommerce .onsale,
+  .woocommerce-page .onsale,
+  .woocommerce .product .related h2::after,
+  .woocommerce-page .product .related h2::after,
+  .woocommerce .product .upsells h2::after,
+  .woocommerce-page .product .upsells h2::after,
+  .widget.widget_product_categories ul a:hover,
+  #site-header #masthead #site-navigator .menu.menu-extra .shopping-cart a .shopping-cart-items-count,
+  .woocommerce .cart-collaterals h2::after,
+  .woocommerce-page .cart-collaterals h2::after,
+  .woocommerce .login h1::after,
+  .woocommerce-page .login h1::after,
+  .woocommerce .checkout_coupon h1::after,
+  .woocommerce-page .checkout_coupon h1::after,
+  .woocommerce .checkout h1::after,
+  .woocommerce-page .checkout h1::after,
+  .woocommerce .login h2::after,
+  .woocommerce-page .login h2::after,
+  .woocommerce .checkout_coupon h2::after,
+  .woocommerce-page .checkout_coupon h2::after,
+  .woocommerce .checkout h2::after,
+  .woocommerce-page .checkout h2::after,
+  .woocommerce .login h3::after,
+  .woocommerce-page .login h3::after,
+  .woocommerce .checkout_coupon h3::after,
+  .woocommerce-page .checkout_coupon h3::after,
+  .woocommerce .checkout h3::after,
+  .woocommerce-page .checkout h3::after,
+  #site-wrapper .flexslider .flex-direction-nav li a:hover,
+  .box .box-title::after,
+  #comments .comments-title::after,
+  #comments #reply-title::after,
+  .content-inner>.woocommerce .myaccount_user+h2::after,
+  .content-inner>.woocommerce .address h3::after,
+  .woocommerce-edit-account .woocommerce h3::after,
+  .woocommerce-edit-address .woocommerce h3::after,
+  .woocommerce .star-rating span,
+  .woocommerce-page .star-rating span,
+  #site-wrapper .iconbox.color,
+  #site-wrapper .owl-controls .owl-buttons>div,
+  .search #main-content .content-inner .search-results article .counter,
+  .navigation.loadmore a,
+  #site-header #masthead #site-navigator-mobile.navigator-mobile,
+  #site-wrapper .owl-controls .owl-pagination .owl-page.active span,
+  #site-wrapper .member .member-info .social-links,
+  #site-wrapper .member:after,
+  .sidebar .widget.widget_nav_menu .menu li .sub-menu li a:hover,
+  #site-header #masthead #site-navigator .menu li a .badge,
+  .error404 #main-content .content-inner .heading-404,
+  #site-wrapper .imagebox .box-content .box-button a,
+  #site-header #headerbar,
+  #site-wrapper .pricing-table .price-column.highlight .column-container .plan,
+  #site-wrapper .pricing-table .price-column.highlight .column-container .price,
+  .vc_row.bg-scheme,
+  #site-wrapper .vc_tta-tabs .vc_tta-tabs-container .vc_tta-tabs-list li.vc_active a,
+  .widget.widget_product_categories ul li.current-cat>a,
+  .sidebar .widget.widget_nav_menu .menu li.current_page_item>a,
+  .sidebar .widget.widget_nav_menu .menu li>a:hover,
+  #site-wrapper .wpb_single_image .vc_figure-caption {
+    background-color: #38BBC7;
+  }
+
+  a.link,
+  .projects .projects-filter ul li.active a,
+  .projects.projects-grid .projects-items .hentry .project-wrap .project-thumbnail .project-buttons a:hover,
+  .projects.projects-grid-alt .projects-items .hentry .project-wrap .project-thumbnail .project-buttons a:hover,
+  .projects.projects-masonry .projects-items .hentry .project-wrap .project-thumbnail .project-buttons a:hover,
+  .woocommerce .onsale::after,
+  .woocommerce-page .onsale::after,
+  .woocommerce .product .woocommerce-tabs .tabs li.active a,
+  .woocommerce-page .product .woocommerce-tabs .tabs li.active a,
+  #site-wrapper .vc_tta-accordion .vc_tta-panel-heading .vc_tta-panel-title a i.vc_tta-controls-icon-plus::before,
+  #site-wrapper .vc_tta-accordion .vc_tta-panel-heading .vc_tta-panel-title a i.vc_tta-controls-icon-plus::after,
+  #site-wrapper .vc_tta-accordion .vc_tta-panel-heading .vc_tta-panel-title a i,
+  #site-wrapper .member .member-info .social-links::after,
+  #site-wrapper .pricing-table .price-column.highlight .column-container {
+    border-color: #38BBC7;
+  }
+
+  #site-wrapper .vc_tta-tabs .vc_tta-tabs-container .vc_tta-tabs-list li::after {
+    border-top-color: #38BBC7;
+  }
+
+  #site-wrapper .wpb_single_image .vc_figure-caption::after {
+    border-bottom-color: #38BBC7;
+  }
+  </style>
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js?ver=1.11.3'></script>
+  <script type='text/javascript' src='js/jquery.themepunch.tools.min.js'></script>
+  <script type='text/javascript' src='js/jquery.themepunch.revolution.min.js'></script>
+  <link rel='https://api.w.org/' href='wp-json/index.html' />
+  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
+  <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
+  <link rel='prev' title='superbhostel' href='index.html_p=944.html' />
+  <link rel='next' title='Prototype Health' href='index.html_p=960.html' />
+  <meta name="generator" content="WordPress 4.5.9" />
+  <link rel='shortlink' href='index.html_p=941.html' />
+  <link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed?url=https%253A%252F%252F24x7studios.com%252Four-work%252Fpingnshop%252F" />
+  <link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed?url=https%253A%252F%252F24x7studios.com%252Four-work%252Fpingnshop%252F&amp;format=xml" />
+  <style type="text/css" id="breadcrumb-trail-css">
+  .breadcrumbs .trail-browse,
+  .breadcrumbs .trail-items,
+  .breadcrumbs .trail-items li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    text-indent: 0;
+  }
+
+  .breadcrumbs .trail-browse {
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    color: inherit;
+  }
+
+  .breadcrumbs .trail-items {
+    list-style: none;
+  }
+
+  .trail-items li::after {
+    content: "\002F";
+    padding: 0 0.5em;
+  }
+
+  .trail-items li:last-of-type::after {
+    display: none;
+  }
+  </style>
+  <meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress." />
+  <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://24x7studios.com/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]-->
+  <!--[if IE  8]><link rel="stylesheet" type="text/css" href="https://24x7studios.com/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css" media="screen"><![endif]-->
+  <script>
+  (function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-48136335-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <meta name="generator" content="Powered by Slider Revolution 5.2.3.5 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+  <script type="text/javascript">
+  //<![CDATA[ 
+  var tlJsHost = ((window.location.protocol == "https:") ? "https://secure.comodo.com/" : "http://www.trustlogo.com/");
+  document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/trustlogo.js' type='text/javascript'%3E%3C/script%3E"));
+  //]]>
+  </script>
+  <!-- versions: WordPress 4.5.9 | Strong Testimonials 2.17.3 -->
+  <noscript>
+    <style type="text/css">
+    .wpb_animate_when_almost_visible {
+      opacity: 1;
+    }
+    </style>
+  </noscript>
+  <!--        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />-->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <!--<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+  <script>
+  /*Scrolling Function*/
+  jQuery(document).ready(function($) {
+
+    /*onscroll select menu*/
+    var sections = $('section'),
+      nav = $('nav'),
+      nav_height = nav.outerHeight();
+
+    $(window).on('scroll', function() {
+      var cur_pos = $(this).scrollTop();
+
+      sections.each(function() {
+        var top = $(this).offset().top - nav_height,
+          bottom = top + $(this).outerHeight();
+
+        if (cur_pos >= top && cur_pos <= bottom) {
+          nav.find('a').removeClass('scrolldownmenu');
+          sections.removeClass('adjustsect');
+
+          $(this).addClass('adjustsect');
+          nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('scrolldownmenu');
+        }
+      });
+    });
+    /*End*/
+
+
+    $('a[href^="#"]').on('click', function(e) {
+
+      e.preventDefault();
+
+      var target = this.hash;
+      var $target = $(target);
+
+      $('html, body').stop().animate({
+        'scrollTop': $target.offset().top
+      }, 600, 'swing', function() {
+
+        window.location.hash = target;
+        $("#menu-one-page a").hasClass("scrolldownmenu").removeClass("scrolldownmenu");
+        //jQuery(this).addClass("scrolldownmenu");
+      });
+    });
+
+
+
+
+    /*Mob header fix on Scrolling*/
+    var mtb = jQuery('.navigator-mobile'),
+      mtbo = mtb.offset().top;
+    jQuery(document).on("scroll", function() {
+
+      if (mtbo - jQuery(window).scrollTop() < 35)
+        mtb.addClass("sticky");
+      else
+        mtb.removeClass("sticky");
+
+    })
+    /*Mob header fix on Scrolling*/
+
+  });
+
+
+
+  /*Scrolling Function*/
+  </script>
+</head>
+
+<body class="single single-nproject postid-941 page-loading layout-wide no-sidebar has-topbar header-v2 wpb-js-composer js-comp-ver-4.11.1 vc_responsive" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+  <div id="site-wrapper">
+    <div id="site-header">
+      <div id="masthead">
+        <!--    <div id="site-brand">
+        <div class="wrapper">
+                                </div>
+    </div>-->
+        <nav id="site-navigator" class="navigator" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+          <div class="wrapper">
+            <div class="custheader">
+              <div class="brand has-logo">
+                <h2 class="logo" itemprop="headline"><a href="index.html"><img class="logo-standard "  alt="24x7studios Pte Ltd" src="https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/03/logo.png"></a></h2></div>
+            </div>
+            <ul id="menu-one-page" class="menu">
+              <li id="menu-item-774" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-774"><a href="index.html">Home</a></li>
+              <li id="menu-item-776" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-776"><a href="index.html_p=18.html">Services</a></li>
+              <li id="menu-item-775" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-775"><a href="index.html_p=756.html">Our Works</a></li>
+              <li id="menu-item-773" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-773"><a href="index.html_p=12.html">Contact</a></li>
+            </ul>
+            <ul class="menu menu-extra">
+            </ul>
+            <!-- /.social-links -->
+          </div>
+        </nav>
+        <nav id="site-navigator-mobile" class="navigator-mobile" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+          <a href="index.html_p=941.html#" class="navigator-toggle">
+        <i class="fa fa-bars"></i>
+    </a>
+          <div class="brand has-logo">
+            <h2 class="logo" itemprop="headline"><a href="index.html"><img class="logo-standard "  alt="24x7studios Pte Ltd" src="https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/03/logo.png"></a></h2></div>
+          <!-- /.navigator-toggle -->
+          <!--<div data-role="page" id="page1"> 
+
+<div role="main" class="ui-content">
+<a href="#defaultpanel" data-role="button" data-inline="true" data-icon="bars">Default panel</a>
+</div>
+ defaultpanel 
+<div data-role="panel" id="defaultpanel" data-theme="b">
+<div class="panel-content">
+<h3>Default panel options</h3>
+<p>This panel has all the default options: positioned on the left with the reveal display mode. The panel markup is <em>before</em> the header, content and footer in the source order.</p>
+<p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p>
+<a href="#demo-links" data-rel="close" data-role="button" data-theme="a" data-icon="delete" data-inline="true">Close panel</a>
+</div> /content wrapper for padding 
+</div> /defaultpanel 
+</div>-->
+          <ul id="menu-one-page-1" class="menu">
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-774"><a href="index.html">Home</a></li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-776"><a href="index.html_p=18.html">Services</a></li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-775"><a href="index.html_p=756.html">Our Works</a></li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-773"><a href="index.html_p=12.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- /#site-header -->
+    <div id="site-content">
+      <div id="page-header">
+        <!-- /.wrapper -->
+      </div>
+      <!-- /#page-header -->
+      <div id="page-body">
+        <div class="wrapper">
+          <div class="content-wrap">
+            <main id="main-content" class="content" itemprop="mainContentOfPage">
+              <div class="main-content-wrap">
+                <div class="content-inner">
+                  <div class="project-single project-content-right project-content-sticky">
+                    <div class="project-single-wrap">
+                      <div class="project-gallery project-gallery-list">
+                        <div class="project-gallery-wrap">
+                          <div class="project-media-item">
+                            <a href="https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/pingnshop-search.png" data-lightbox="nivoLightbox" data-lightbox-gallery="941">
+                    <img width="1819" height="1099" src="https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/pingnshop-search.png" class="attachment-full size-full" alt="pingnshop search" srcset="https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/pingnshop-search.png 1819w, https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/pingnshop-search-300x181.png 300w, https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/pingnshop-search-768x464.png 768w, https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/pingnshop-search-1024x619.png 1024w, https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/pingnshop-search-75x45.png 75w, https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/pingnshop-search-555x335.png 555w, https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/pingnshop-search-1110x671.png 1110w, https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/pingnshop-search-600x363.png 600w, https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/pingnshop-search-1200x725.png 1200w" sizes="(max-width: 1819px) 100vw, 1819px" />               </a>
+                          </div>
+                          <div class="project-media-item">
+                            <a href="https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/pingnshop-home.jpeg" data-lightbox="nivoLightbox" data-lightbox-gallery="941">
+                    <img width="1280" height="833" src="https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/pingnshop-home.jpeg" class="attachment-full size-full" alt="pingnshop home" srcset="https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/pingnshop-home.jpeg 1280w, https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/pingnshop-home-300x195.jpeg 300w, https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/pingnshop-home-768x500.jpeg 768w, https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/pingnshop-home-1024x666.jpeg 1024w, https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/pingnshop-home-75x49.jpeg 75w, https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/pingnshop-home-555x361.jpeg 555w, https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/pingnshop-home-1110x722.jpeg 1110w, https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/pingnshop-home-600x390.jpeg 600w, https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/pingnshop-home-1200x781.jpeg 1200w" sizes="(max-width: 1280px) 100vw, 1280px" />                </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="project-content">
+                        <div class="project-content-wrap">
+                          <h3 class="project-title">Project info</h3>
+                          <p>pingnshop.com allow user to search across multiple marketplace to compare price</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <nav class="navigation post-navigation" role="navigation">
+                    <ul class="nav-links">
+                      <li class="previous-post"><a href="index.html_p=944.html" rel="prev"><span class="meta-nav">Previous Post</span> superbhostel</a></li>
+                      <li class="next-post"><a href="index.html_p=960.html" rel="next"><span class="meta-nav">Next Post</span> Prototype Health</a></li>
+                    </ul>
+                    <!-- .nav-links -->
+                  </nav>
+                  <!-- .navigation -->
+                  <div class="projects projects-related projects-grid" data-columns="5">
+                    <div class="projects-related-wrap">
+                      <h3 class="projects-related-title">
+                    Related Projects                </h3>
+                      <div class="projects-items">
+                        <div class="project post-942 nproject type-nproject status-publish has-post-thumbnail hentry nproject-category-custom-web-application" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+                          <div class="project-wrap">
+                            <figure class="project-thumbnail">
+                              <a href="index.html_p=942.html">
+                                    <img width="600" height="413" src="https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/yourtimemytime-home-600x413.jpeg" class="attachment-portfolio-medium-crop size-portfolio-medium-crop wp-post-image" alt="yourtimemytime home" itemprop="image" />                                </a>
+                              <figcaption>
+                                <div class="project-buttons">
+                                  <a href="index.html_p=942.html" class="project-quick-view" data-lightbox="nivoLightbox">
+                                            <span> View</span>
+                                        </a>
+                                </div>
+                              </figcaption>
+                            </figure>
+                            <div class="project-info">
+                              <div class="project-info-wrap">
+                                <h3 class="project-title" itemprop="name headline">
+                                        <a href="index.html_p=942.html">
+                                            yourtimemytime                                        </a>
+                                    </h3>
+                                <ul class="project-categories hhh">
+                                  <li><a>Custom Web Application</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="project post-940 nproject type-nproject status-publish has-post-thumbnail hentry nproject-category-custom-web-application" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+                          <div class="project-wrap">
+                            <figure class="project-thumbnail">
+                              <a href="index.html_p=940.html">
+                                    <img width="600" height="413" src="https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/junktoclear-home-600x413.jpeg" class="attachment-portfolio-medium-crop size-portfolio-medium-crop wp-post-image" alt="junktoclear home" itemprop="image" />                                </a>
+                              <figcaption>
+                                <div class="project-buttons">
+                                  <a href="index.html_p=940.html" class="project-quick-view" data-lightbox="nivoLightbox">
+                                            <span> View</span>
+                                        </a>
+                                </div>
+                              </figcaption>
+                            </figure>
+                            <div class="project-info">
+                              <div class="project-info-wrap">
+                                <h3 class="project-title" itemprop="name headline">
+                                        <a href="index.html_p=940.html">
+                                            Junktoclear                                        </a>
+                                    </h3>
+                                <ul class="project-categories hhh">
+                                  <li><a>Custom Web Application</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="project post-841 nproject type-nproject status-publish has-post-thumbnail hentry nproject-category-wordpress" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+                          <div class="project-wrap">
+                            <figure class="project-thumbnail">
+                              <a href="index.html_p=841.html">
+                                    <img width="600" height="413" src="https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2015/12/1Fiesta-600x413.png" class="attachment-portfolio-medium-crop size-portfolio-medium-crop wp-post-image" alt="1Fiesta Home Page" itemprop="image" />                                </a>
+                              <figcaption>
+                                <div class="project-buttons">
+                                  <a href="index.html_p=841.html" class="project-quick-view" data-lightbox="nivoLightbox">
+                                            <span> View</span>
+                                        </a>
+                                </div>
+                              </figcaption>
+                            </figure>
+                            <div class="project-info">
+                              <div class="project-info-wrap">
+                                <h3 class="project-title" itemprop="name headline">
+                                        <a href="index.html_p=841.html">
+                                            1fiesta                                        </a>
+                                    </h3>
+                                <ul class="project-categories hhh">
+                                  <li><a>Wordpress</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="project post-960 nproject type-nproject status-publish has-post-thumbnail hentry nproject-category-code-my-design nproject-category-custom-web-application" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+                          <div class="project-wrap">
+                            <figure class="project-thumbnail">
+                              <a href="index.html_p=960.html">
+                                    <img width="600" height="413" src="https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/prototype-home-600x413.png" class="attachment-portfolio-medium-crop size-portfolio-medium-crop wp-post-image" alt="prototype-home" itemprop="image" />                                </a>
+                              <figcaption>
+                                <div class="project-buttons">
+                                  <a href="index.html_p=960.html" class="project-quick-view" data-lightbox="nivoLightbox">
+                                            <span> View</span>
+                                        </a>
+                                </div>
+                              </figcaption>
+                            </figure>
+                            <div class="project-info">
+                              <div class="project-info-wrap">
+                                <h3 class="project-title" itemprop="name headline">
+                                        <a href="index.html_p=960.html">
+                                            Prototype Health                                        </a>
+                                    </h3>
+                                <ul class="project-categories hhh">
+                                  <li><a>Code My Design</a></li>
+                                  <li><a>Custom Web Application</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="project post-944 nproject type-nproject status-publish has-post-thumbnail hentry nproject-category-custom-web-application nproject-category-wordpress" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+                          <div class="project-wrap">
+                            <figure class="project-thumbnail">
+                              <a href="index.html_p=944.html">
+                                    <img width="600" height="413" src="https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/superbhostel-home-600x413.jpeg" class="attachment-portfolio-medium-crop size-portfolio-medium-crop wp-post-image" alt="superbhostel home" itemprop="image" />                                </a>
+                              <figcaption>
+                                <div class="project-buttons">
+                                  <a href="index.html_p=944.html" class="project-quick-view" data-lightbox="nivoLightbox">
+                                            <span> View</span>
+                                        </a>
+                                </div>
+                              </figcaption>
+                            </figure>
+                            <div class="project-info">
+                              <div class="project-info-wrap">
+                                <h3 class="project-title" itemprop="name headline">
+                                        <a href="index.html_p=944.html">
+                                            superbhostel                                        </a>
+                                    </h3>
+                                <ul class="project-categories hhh">
+                                  <li><a>Custom Web Application</a></li>
+                                  <li><a>Wordpress</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="project post-939 nproject type-nproject status-publish has-post-thumbnail hentry nproject-category-wordpress" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+                          <div class="project-wrap">
+                            <figure class="project-thumbnail">
+                              <a href="index.html_p=939.html">
+                                    <img width="600" height="413" src="https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/iasg-home-600x413.jpeg" class="attachment-portfolio-medium-crop size-portfolio-medium-crop wp-post-image" alt="iasg home" itemprop="image" />                                </a>
+                              <figcaption>
+                                <div class="project-buttons">
+                                  <a href="index.html_p=939.html" class="project-quick-view" data-lightbox="nivoLightbox">
+                                            <span> View</span>
+                                        </a>
+                                </div>
+                              </figcaption>
+                            </figure>
+                            <div class="project-info">
+                              <div class="project-info-wrap">
+                                <h3 class="project-title" itemprop="name headline">
+                                        <a href="index.html_p=939.html">
+                                            iasg                                        </a>
+                                    </h3>
+                                <ul class="project-categories hhh">
+                                  <li><a>Wordpress</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="project post-943 nproject type-nproject status-publish has-post-thumbnail hentry nproject-category-code-my-design" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+                          <div class="project-wrap">
+                            <figure class="project-thumbnail">
+                              <a href="index.html_p=943.html">
+                                    <img width="600" height="413" src="https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/traceasia-main-600x413.jpeg" class="attachment-portfolio-medium-crop size-portfolio-medium-crop wp-post-image" alt="traceasia main" itemprop="image" />                                </a>
+                              <figcaption>
+                                <div class="project-buttons">
+                                  <a href="index.html_p=943.html" class="project-quick-view" data-lightbox="nivoLightbox">
+                                            <span> View</span>
+                                        </a>
+                                </div>
+                              </figcaption>
+                            </figure>
+                            <div class="project-info">
+                              <div class="project-info-wrap">
+                                <h3 class="project-title" itemprop="name headline">
+                                        <a href="index.html_p=943.html">
+                                            traceasia                                        </a>
+                                    </h3>
+                                <ul class="project-categories hhh">
+                                  <li><a>Code My Design</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="project post-919 nproject type-nproject status-publish has-post-thumbnail hentry nproject-category-wordpress" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+                          <div class="project-wrap">
+                            <figure class="project-thumbnail">
+                              <a href="index.html_p=919.html">
+                                    <img width="600" height="413" src="https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/dneinn-600x413.jpg" class="attachment-portfolio-medium-crop size-portfolio-medium-crop wp-post-image" alt="dneinn" itemprop="image" />                                </a>
+                              <figcaption>
+                                <div class="project-buttons">
+                                  <a href="index.html_p=919.html" class="project-quick-view" data-lightbox="nivoLightbox">
+                                            <span> View</span>
+                                        </a>
+                                </div>
+                              </figcaption>
+                            </figure>
+                            <div class="project-info">
+                              <div class="project-info-wrap">
+                                <h3 class="project-title" itemprop="name headline">
+                                        <a href="index.html_p=919.html">
+                                            dne inn                                        </a>
+                                    </h3>
+                                <ul class="project-categories hhh">
+                                  <li><a>Wordpress</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="project post-914 nproject type-nproject status-publish has-post-thumbnail hentry nproject-category-custom-web-application nproject-category-scrapping" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+                          <div class="project-wrap">
+                            <figure class="project-thumbnail">
+                              <a href="index.html_p=914.html">
+                                    <img width="600" height="413" src="https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/oo-main-600x413.jpeg" class="attachment-portfolio-medium-crop size-portfolio-medium-crop wp-post-image" alt="oo main" itemprop="image" />                                </a>
+                              <figcaption>
+                                <div class="project-buttons">
+                                  <a href="index.html_p=914.html" class="project-quick-view" data-lightbox="nivoLightbox">
+                                            <span> View</span>
+                                        </a>
+                                </div>
+                              </figcaption>
+                            </figure>
+                            <div class="project-info">
+                              <div class="project-info-wrap">
+                                <h3 class="project-title" itemprop="name headline">
+                                        <a href="index.html_p=914.html">
+                                            OO.sg Book Price Comparison                                        </a>
+                                    </h3>
+                                <ul class="project-categories hhh">
+                                  <li><a>Custom Web Application</a></li>
+                                  <li><a>Scrapping</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="project post-948 nproject type-nproject status-publish has-post-thumbnail hentry nproject-category-custom-web-application" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+                          <div class="project-wrap">
+                            <figure class="project-thumbnail">
+                              <a href="index.html_p=948.html">
+                                    <img width="600" height="413" src="https://65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com/wp-content/uploads/2016/05/lovecert-home-600x413.png" class="attachment-portfolio-medium-crop size-portfolio-medium-crop wp-post-image" alt="lovecert home" itemprop="image" />                                </a>
+                              <figcaption>
+                                <div class="project-buttons">
+                                  <a href="index.html_p=948.html" class="project-quick-view" data-lightbox="nivoLightbox">
+                                            <span> View</span>
+                                        </a>
+                                </div>
+                              </figcaption>
+                            </figure>
+                            <div class="project-info">
+                              <div class="project-info-wrap">
+                                <h3 class="project-title" itemprop="name headline">
+                                        <a href="index.html_p=948.html">
+                                            lovecert                                        </a>
+                                    </h3>
+                                <ul class="project-categories hhh">
+                                  <li><a>Custom Web Application</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+            <!-- /#main-content -->
+          </div>
+          <!-- /.content-wrap -->
+        </div>
+        <!-- /.wrapper -->
+      </div>
+      <!-- /#page-body -->
+    </div>
+    <!-- /#site-content -->
+    <div id="site-footer">
+      <div id="footer-content">
+        <div class="wrapper">
+        </div>
+      </div>
+      <div id="hnt-footer">
+        <div class="wrapper">
+          <div class="copyright">
+            <div class="copyright-content">
+              24X7studios.com © 2016 All right reserved </div>
+            <!-- /.copyright-content -->
+          </div>
+          <!-- /.copyright -->
+          <!-- /.copyright-content -->
+        </div>
+      </div>
+    </div>
+    <!-- /.wrapper -->
+  </div>
+  <!-- /#site-footer -->
+  <!--    </div>-->
+  <!-- /#site-wrapper -->
+  <script type='text/javascript' src='js/jquery.form.min.js'></script>
+  <script type='text/javascript'>
+  /* <![CDATA[ */
+  var _wpcf7 = { "recaptcha": { "messages": { "empty": "Please verify that you are not a robot." } } };
+  /* ]]> */
+  </script>
+  <script type='text/javascript' src='js/scripts.js'></script>
+  <script type='text/javascript' src='js/components.js'></script>
+  <script type='text/javascript'>
+  /* <![CDATA[ */
+  var _themeConfig = { "stickyHeader": "1", "responsiveMenu": "1", "blogLayout": null, "pagingStyle": "numeric", "pagingContainer": "#main-content > .main-content-wrap > .content-inner", "pagingNavigator": ".navigation.paging-navigation.loadmore" };
+  /* ]]> */
+  </script>
+  <script type='text/javascript' src='js/theme.js'></script>
+  <script type='text/javascript' src='js/wp-embed.min.js'></script>
+</body>
+
+</html>
+<!-- Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Object Caching 1617/1666 objects using disk
+Page Caching using disk
+Content Delivery Network via Rackspace Cloud Files: 65667d5f1ac2177283ee-e22aac7e9342fa219a420dcfdf97a9ed.ssl.cf6.rackcdn.com
+Database Caching 36/44 queries in 0.005 seconds using disk
+
+ Served from: 24x7studios.com @ 2017-08-22 10:55:44 by W3 Total Cache -->
